@@ -1,0 +1,18 @@
+from collections import Counter
+text = input("enter a text: ")
+total = len(text)
+unique = len(set(text))
+lowercase = sum(1 for c in text if c.islower())
+uppercase = sum(1 for c in text if c.isupper())
+digits = sum(1 for c in text if c.isdigit())
+unique_symbols = len(set(c for c in text if not c.isalnum() and not c.isspace()))
+char_frequency = Counter(text)
+print("total Characters: ", total)
+print("unique characters: ", unique)
+print("lowercase characters: ", lowercase)
+print("uppercase characters: ", uppercase)
+print("digits: ", digits)
+print("unique symbols: ", unique_symbols)
+print("Character Frequencies:")
+for char, count in char_frequency.items():
+    print(f"'{char}': {count}")
