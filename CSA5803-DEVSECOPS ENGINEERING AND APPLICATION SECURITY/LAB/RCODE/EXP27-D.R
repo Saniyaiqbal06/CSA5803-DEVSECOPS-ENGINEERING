@@ -1,0 +1,6 @@
+arr <- c(25, 12, 89, 45, 6, 72)
+largest <- max(arr)
+smallest <- min(arr)
+cat("Array Elements:", arr, "\n")
+cat("Largest Element =", largest, "\n")
+cat("Smallest Element =", smallest)

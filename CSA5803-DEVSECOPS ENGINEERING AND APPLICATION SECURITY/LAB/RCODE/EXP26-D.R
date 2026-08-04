@@ -1,0 +1,6 @@
+arr <- c(10, 20, 30, 40, 50)
+sum_arr <- sum(arr)
+avg_arr <- mean(arr)
+cat("Array Elements:", arr, "\n")
+cat("Sum =", sum_arr, "\n")
+cat("Average =", avg_arr)
